@@ -4,4 +4,6 @@
 
     <TNavBar />
   </main>
+
+  <TFooter />
 </template>
