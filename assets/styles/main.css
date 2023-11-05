@@ -1,0 +1,49 @@
+:root {
+  --brand-primary: #3498db;
+  --brand-primary-dark: #2980b9;
+  --brand-light: #ecf0f1;
+  --brand-dark: #121212;
+}
+
+html,
+body,
+#__nuxt {
+  height: 100%;
+}
+
+html.dark {
+  color-scheme: dark;
+}
+
+body {
+  background: var(--brand-light);
+  color: var(--brand-dark);
+}
+
+.dark body {
+  background: var(--brand-dark);
+  color: var(--brand-light);
+}
+
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation: none;
+  mix-blend-mode: normal;
+}
+
+::view-transition-old(root) {
+  z-index: 1;
+}
+
+::view-transition-new(root) {
+  z-index: 9999;
+}
+
+.dark::view-transition-old(root) {
+  z-index: 9999;
+}
+
+.dark::view-transition-new(root) {
+  z-index: 1;
+}
+
