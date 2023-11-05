@@ -1,7 +1,11 @@
+<script setup lang="ts">
+import { appDescription } from '~/constants'
+</script>
+
 <template>
   <div>
     <p>
-      Guany 的首页
+      {{ appDescription }}
     </p>
   </div>
 </template>

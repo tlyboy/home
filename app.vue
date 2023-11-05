@@ -1,9 +1,11 @@
 <script setup lang="ts">
+import { appName } from '~/constants'
+
 useHead({
   htmlAttrs: {
     lang: 'zh-CN',
   },
-  title: 'Guany 的首页',
+  title: appName,
 })
 </script>
 
