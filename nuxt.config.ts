@@ -19,9 +19,4 @@ export default defineNuxtConfig({
   imports: {
     dirs: ['stores'],
   },
-  nitro: {
-    routeRules: {
-      '/github/**': { proxy: 'https://api.github.com/**' },
-    },
-  },
 })
