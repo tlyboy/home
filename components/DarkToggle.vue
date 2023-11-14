@@ -1,6 +1,7 @@
-export const color = useColorMode()
+<script setup lang="ts">
+const color = useColorMode()
 
-export function toggleDark(event: MouseEvent) {
+function toggleDark(event: MouseEvent) {
   // @ts-expect-error experimental API
   const isAppearanceTransition = document.startViewTransition
     && !window.matchMedia('(prefers-reduced-motion: reduce)').matches
@@ -43,3 +44,10 @@ export function toggleDark(event: MouseEvent) {
       )
     })
 }
+</script>
+
+<template>
+  <button icon-btn @click="toggleDark">
+    <div i-carbon-sun dark:i-carbon-moon />
+  </button>
+</template>

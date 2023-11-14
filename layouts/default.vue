@@ -2,8 +2,8 @@
   <main flex="~ col" h-full items-center justify-center>
     <slot />
 
-    <TNavBar />
+    <NavBar />
   </main>
 
-  <TFooter />
+  <Footer />
 </template>
