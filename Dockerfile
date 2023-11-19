@@ -15,4 +15,4 @@ FROM node:20-alpine as production-stage
 COPY --from=build-stage /app/.output /app
 EXPOSE 3000
 
-CMD [ "node", "/app/server/index.mjs" ]
+CMD ["node", "/app/server/index.mjs"]
