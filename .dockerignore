@@ -1,3 +1,4 @@
-node_modules
-dist
+.nuxt
 .output
+dist
+node_modules
