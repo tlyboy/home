@@ -2,7 +2,7 @@
   <main flex="~ col" h-full items-center justify-center>
     <slot />
 
-    <TNavBar />
+    <TNavBar mt-6 />
   </main>
 
   <TFooter />
