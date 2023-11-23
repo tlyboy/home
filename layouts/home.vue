@@ -1,9 +1,10 @@
 <template>
   <main
-    px-4 py-10
+    flex="~ col" h-full items-center justify-center
     text="center gray-700 dark:gray-200"
   >
     <slot />
     <TNavBar mt-6 />
   </main>
+  <TFooter />
 </template>
