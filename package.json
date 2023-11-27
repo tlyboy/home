@@ -25,6 +25,7 @@
     "@types/nprogress": "^0.2.3",
     "@unocss/eslint-plugin": "^0.57.7",
     "@unocss/nuxt": "^0.57.7",
+    "@vue-macros/nuxt": "^1.9.7",
     "@vueuse/nuxt": "^10.6.1",
     "eslint": "^8.54.0",
     "nuxt": "^3.8.2",

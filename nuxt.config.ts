@@ -6,6 +6,7 @@ export default defineNuxtConfig({
     '~/assets/styles/main.css',
   ],
   modules: [
+    '@vue-macros/nuxt',
     '@nuxtjs/color-mode',
     '@unocss/nuxt',
     '@pinia/nuxt',
