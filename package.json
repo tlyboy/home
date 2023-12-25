@@ -2,7 +2,7 @@
   "name": "nuxt-app",
   "type": "module",
   "private": true,
-  "packageManager": "pnpm@8.11.0",
+  "packageManager": "pnpm@8.12.1",
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
@@ -17,19 +17,19 @@
     "nprogress": "^0.2.0"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^2.1.0",
-    "@iconify-json/carbon": "^1.1.22",
+    "@antfu/eslint-config": "^2.4.6",
+    "@iconify-json/carbon": "^1.1.27",
     "@nuxt/devtools": "latest",
     "@nuxtjs/color-mode": "^3.3.2",
     "@pinia-plugin-persistedstate/nuxt": "^1.2.0",
     "@types/nprogress": "^0.2.3",
     "@unocss/eslint-plugin": "^0.57.7",
     "@unocss/nuxt": "^0.57.7",
-    "@vue-macros/nuxt": "^1.9.7",
-    "@vueuse/nuxt": "^10.6.1",
-    "eslint": "^8.54.0",
+    "@vue-macros/nuxt": "^1.9.16",
+    "@vueuse/nuxt": "^10.7.0",
+    "eslint": "^8.56.0",
     "nuxt": "^3.8.2",
-    "vue": "^3.3.9",
+    "vue": "^3.3.13",
     "vue-router": "^4.2.5"
   }
 }
