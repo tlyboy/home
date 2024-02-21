@@ -28,8 +28,9 @@
     "@unocss/nuxt": "^0.58.5",
     "@vue-macros/nuxt": "^1.9.21",
     "@vueuse/nuxt": "^10.7.2",
-    "eslint": "^8.56.0",
+    "eslint": "npm:eslint-ts-patch@8.56.0-0",
     "eslint-plugin-format": "^0.1.0",
+    "eslint-ts-patch": "8.56.0-0",
     "nuxt": "^3.10.2",
     "vue": "^3.4.19",
     "vue-router": "^4.2.5"
