@@ -8,8 +8,6 @@ definePageMeta({
 
 <template>
   <div>
-    <p>
-      {{ appDescription }}
-    </p>
+    <p>{{ appDescription }}</p>
   </div>
 </template>
