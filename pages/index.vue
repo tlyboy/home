@@ -34,7 +34,7 @@ function submitForm(e: Event) {
     <div py-4 />
 
     <form @submit="submitForm">
-      <TheInput ref="wdRef" v-model="form.wd" placeholder="请输入" />
+      <TheInput ref="wdRef" v-model="form.wd" placeholder="请输入" animate-pulse />
 
       <div>
         <button m-3 text-sm btn>
