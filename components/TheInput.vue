@@ -2,10 +2,21 @@
 const { modelValue } = defineModels<{
   modelValue: string
 }>()
+
+const inputRef = ref<HTMLInputElement | null>(null)
+
+function focus() {
+  inputRef.value?.focus()
+}
+
+defineExpose({
+  focus,
+})
 </script>
 
 <template>
   <input
+    ref="inputRef"
     v-model="modelValue"
     v-bind="$attrs"
     type="text"
