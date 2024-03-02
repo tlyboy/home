@@ -1,7 +1,7 @@
 <template>
   <footer class="flex flex-col items-center gap-2 p-10">
     <a
-      class="link"
+      class="icon-btn"
       href="https://beian.miit.gov.cn/"
       target="_blank"
       rel="noopener noreferrer"
@@ -9,7 +9,7 @@
     >
 
     <a
-      class="link flex items-center gap-2"
+      class="icon-btn flex items-center gap-2"
       href="https://beian.mps.gov.cn/#/query/webSearch?code=33078402100683"
       target="_blank"
       rel="noopener noreferrer"
