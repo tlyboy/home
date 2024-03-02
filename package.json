@@ -1,38 +1,37 @@
 {
   "name": "nuxt-app",
-  "type": "module",
   "private": true,
-  "packageManager": "pnpm@8.15.3",
+  "type": "module",
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "postinstall": "nuxt prepare",
-    "lint": "eslint .",
-    "lint:fix": "eslint . --fix",
     "preview": "nuxt preview"
   },
   "dependencies": {
-    "@pinia/nuxt": "^0.5.1",
-    "nprogress": "^0.2.0"
+    "nprogress": "^0.2.0",
+    "nuxt": "^3.10.3",
+    "vue": "^3.4.21",
+    "vue-router": "^4.3.0"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^2.6.4",
+    "@egoist/tailwindcss-icons": "^1.7.4",
+    "@element-plus/nuxt": "^1.0.7",
     "@iconify-json/carbon": "^1.1.30",
-    "@nuxt/devtools": "latest",
     "@nuxtjs/color-mode": "^3.3.2",
     "@pinia-plugin-persistedstate/nuxt": "^1.2.0",
+    "@pinia/nuxt": "^0.5.1",
     "@types/nprogress": "^0.2.3",
-    "@unocss/eslint-config": "^0.58.5",
-    "@unocss/eslint-plugin": "^0.58.5",
-    "@unocss/nuxt": "^0.58.5",
     "@vue-macros/nuxt": "^1.9.21",
-    "@vueuse/nuxt": "^10.7.2",
-    "eslint": "npm:eslint-ts-patch@8.56.0-0",
-    "eslint-plugin-format": "^0.1.0",
-    "eslint-ts-patch": "8.56.0-0",
-    "nuxt": "^3.10.2",
-    "vue": "^3.4.19",
-    "vue-router": "^4.2.5"
-  }
+    "@vueuse/core": "^10.9.0",
+    "@vueuse/nuxt": "^10.9.0",
+    "autoprefixer": "^10.4.17",
+    "postcss": "^8.4.35",
+    "prettier": "^3.2.5",
+    "prettier-plugin-tailwindcss": "^0.5.11",
+    "sass": "^1.71.1",
+    "tailwindcss": "^3.4.1"
+  },
+  "packageManager": "pnpm@8.15.4"
 }
