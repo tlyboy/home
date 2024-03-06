@@ -4,7 +4,7 @@
 
     <a
       class="icon-btn i-carbon-logo-github"
-      href="https://github.com/tlyboy/element-plus-nuxt-starter"
+      href="https://github.com/tlyboy/home"
       target="_blank"
       rel="noopener noreferrer"
       title="GitHub"

@@ -1,5 +1,5 @@
 services:
-  element-plus-nuxt-starter:
+  home:
     build: .
     restart: unless-stopped
     # network_mode: host
