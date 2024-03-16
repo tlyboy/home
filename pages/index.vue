@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { appDescription } from '~/constants'
-
 definePageMeta({
   layout: 'home',
 })
@@ -8,6 +6,6 @@ definePageMeta({
 
 <template>
   <div>
-    <p>{{ appDescription }}</p>
+    <TheHero />
   </div>
 </template>
