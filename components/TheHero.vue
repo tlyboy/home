@@ -1,5 +1,7 @@
 <script setup lang="ts">
-const { data } = useFetch('/api/bing/HPImageArchive', {
+import type { HPImageArchive } from '~/types/bing/HPImageArchive'
+
+const { data } = useFetch<HPImageArchive>('/bing/HPImageArchive.aspx', {
   query: {
     format: 'js',
     idx: 0,
@@ -11,7 +13,7 @@ const { data } = useFetch('/api/bing/HPImageArchive', {
 
 <template>
   <div
-    class="flex h-screen items-center justify-center bg-cover bg-center bg-no-repeat"
+    class="flex h-[500px] items-center justify-center bg-cover bg-center bg-no-repeat"
     :style="{
       backgroundImage: `url(https://www.bing.com${data?.images[0]?.url})`,
     }"

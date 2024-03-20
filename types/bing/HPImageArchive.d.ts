@@ -1,4 +1,4 @@
-export interface HPImageArchiveType {
+export interface HPImageArchive {
   images: Image[]
   tooltips: Tooltips
 }

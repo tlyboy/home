@@ -34,4 +34,10 @@ export default defineNuxtConfig({
   elementPlus: {
     importStyle: 'scss',
   },
+  nitro: {
+    routeRules: {
+      '/github/**': { proxy: 'https://api.github.com/**' },
+      '/bing/**': { proxy: 'https://www.bing.com/**' },
+    },
+  },
 })
