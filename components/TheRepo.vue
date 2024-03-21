@@ -16,11 +16,11 @@ const { data } = useFetch<Repos>('/github/users/tlyboy/repos', {
       <div
         v-for="repo in data"
         :key="repo.id"
-        class="flex flex-col gap-2 rounded-lg border-2 border-gray-200 p-4 dark:border-gray-700"
+        class="flex w-[300px] flex-col gap-2 rounded-lg border-2 border-gray-200 p-4 dark:border-gray-700"
       >
-        <h3 class="font-bold">{{ repo.name }}</h3>
-        <p>{{ repo.description }}</p>
-        <div class="flex justify-end gap-2">
+        <h3 class="truncate font-bold">{{ repo.name }}</h3>
+        <p class="truncate">{{ repo.description }}</p>
+        <div class="flex justify-end gap-2 text-xl">
           <a
             v-if="repo.homepage"
             class="icon-btn i-carbon-link"
