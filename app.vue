@@ -14,8 +14,10 @@ const locale = ref(zhCn)
 
 <template>
   <el-config-provider :locale="locale">
-    <NuxtLayout>
-      <NuxtPage />
-    </NuxtLayout>
+    <el-scrollbar height="100%">
+      <NuxtLayout>
+        <NuxtPage />
+      </NuxtLayout>
+    </el-scrollbar>
   </el-config-provider>
 </template>
