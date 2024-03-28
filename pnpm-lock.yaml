@@ -23,8 +23,8 @@ devDependencies:
     specifier: ^1.7.4
     version: 1.7.4(tailwindcss@3.4.3)
   '@element-plus/nuxt':
-    specifier: ^1.0.8
-    version: 1.0.8(@element-plus/icons-vue@2.3.1)(element-plus@2.6.0)
+    specifier: 1.0.7
+    version: 1.0.7(@element-plus/icons-vue@2.3.1)(element-plus@2.6.0)
   '@iconify-json/carbon':
     specifier: ^1.1.31
     version: 1.1.31
@@ -418,8 +418,8 @@ packages:
       vue: 3.4.21
     dev: true
 
-  /@element-plus/nuxt@1.0.8(@element-plus/icons-vue@2.3.1)(element-plus@2.6.0):
-    resolution: {integrity: sha512-A8CKdk0z1t9tiw2JowZGwYwSyZZoOBXFgedSqyeAO3wmp26ZqBzKir0/5BN54mXQ06VYZZRtq3cmkpNtJOKGQA==}
+  /@element-plus/nuxt@1.0.7(@element-plus/icons-vue@2.3.1)(element-plus@2.6.0):
+    resolution: {integrity: sha512-cRP2iMTzrKKKgfXuWXQ/HAC1vawVeErNZPz7ylA2OfhR+RKPS0UbDy43zytBx/imxhuZbtDI6lPuGAf7TOMYDQ==}
     peerDependencies:
       '@element-plus/icons-vue': '>=0.2.6'
       element-plus: '>=2'

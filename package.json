@@ -17,7 +17,7 @@
   },
   "devDependencies": {
     "@egoist/tailwindcss-icons": "^1.7.4",
-    "@element-plus/nuxt": "^1.0.8",
+    "@element-plus/nuxt": "1.0.7",
     "@iconify-json/carbon": "^1.1.31",
     "@nuxtjs/color-mode": "^3.3.3",
     "@pinia-plugin-persistedstate/nuxt": "^1.2.0",
