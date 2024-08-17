@@ -16,14 +16,14 @@
   "devDependencies": {
     "@egoist/tailwindcss-icons": "^1.8.1",
     "@element-plus/nuxt": "^1.0.9",
-    "@iconify-json/carbon": "^1.1.36",
-    "@nuxtjs/color-mode": "^3.4.2",
+    "@iconify-json/carbon": "^1.1.37",
+    "@nuxtjs/color-mode": "^3.4.4",
     "@nuxtjs/tailwindcss": "^6.12.1",
     "prettier": "^3.3.3",
     "prettier-plugin-tailwindcss": "^0.5.14",
     "sass": "^1.77.8"
   },
-  "packageManager": "pnpm@9.6.0",
+  "packageManager": "pnpm@9.7.1",
   "engines": {
     "node": "20.x"
   }
