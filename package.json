@@ -10,12 +10,12 @@
     "preview": "nuxt preview"
   },
   "dependencies": {
-    "nuxt": "^3.12.4",
+    "nuxt": "^3.13.0",
     "vue": "latest"
   },
   "devDependencies": {
     "@egoist/tailwindcss-icons": "^1.8.1",
-    "@element-plus/nuxt": "^1.0.9",
+    "@element-plus/nuxt": "^1.0.10",
     "@iconify-json/carbon": "^1.1.37",
     "@nuxtjs/color-mode": "^3.4.4",
     "@nuxtjs/tailwindcss": "^6.12.1",
@@ -23,7 +23,7 @@
     "prettier-plugin-tailwindcss": "^0.5.14",
     "sass": "^1.77.8"
   },
-  "packageManager": "pnpm@9.7.1",
+  "packageManager": "pnpm@9.9.0",
   "engines": {
     "node": "20.x"
   }
