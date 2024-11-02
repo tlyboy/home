@@ -21,7 +21,7 @@
     "@nuxtjs/tailwindcss": "^6.12.2",
     "prettier": "^3.3.3",
     "prettier-plugin-tailwindcss": "^0.6.8",
-    "sass": "~1.78.0"
+    "sass": "^1.80.6"
   },
   "packageManager": "pnpm@9.12.3"
 }
