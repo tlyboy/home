@@ -10,7 +10,7 @@
     "preview": "nuxt preview"
   },
   "dependencies": {
-    "nuxt": "^3.13.2",
+    "nuxt": "^3.14.1592",
     "vue": "latest"
   },
   "devDependencies": {
@@ -20,8 +20,8 @@
     "@nuxtjs/color-mode": "^3.5.2",
     "@nuxtjs/tailwindcss": "^6.12.2",
     "prettier": "^3.3.3",
-    "prettier-plugin-tailwindcss": "^0.6.8",
-    "sass": "^1.80.6"
+    "prettier-plugin-tailwindcss": "^0.6.9",
+    "sass": "^1.81.0"
   },
-  "packageManager": "pnpm@9.12.3"
+  "packageManager": "pnpm@9.14.2"
 }
