@@ -1,9 +1,0 @@
-{
-  "recommendations": [
-    "Vue.volar",
-    "antfu.goto-alias",
-    "bradlc.vscode-tailwindcss",
-    "editorconfig.editorconfig",
-    "esbenp.prettier-vscode"
-  ]
-}
