@@ -24,5 +24,12 @@
     "prettier-plugin-tailwindcss": "^0.6.11",
     "sass": "^1.85.0"
   },
-  "packageManager": "pnpm@10.4.0"
+  "packageManager": "pnpm@10.4.0",
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "@parcel/watcher",
+      "esbuild",
+      "vue-demi"
+    ]
+  }
 }
