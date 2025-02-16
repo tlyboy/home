@@ -13,7 +13,7 @@ defineProps<{
       <div
         v-for="repo in repos"
         :key="repo.id"
-        class="flex w-[300px] cursor-default flex-col gap-2 rounded-lg border border-[--el-color-info-light-7] p-4 transition duration-300 hover:shadow-2xl hover:shadow-[#3498db]"
+        class="flex w-[300px] cursor-default flex-col gap-2 rounded-lg border border-[var(--el-color-info-light-7)] p-4 transition duration-300 hover:shadow-2xl hover:shadow-[#3498db]"
       >
         <h3 class="truncate font-bold">{{ repo.name }}</h3>
         <p class="truncate">{{ repo.description }}</p>

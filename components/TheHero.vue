@@ -12,6 +12,6 @@ defineProps<{
         backgroundImage,
       }"
     ></div>
-    <div class="absolute inset-0 dark:bg-black dark:bg-opacity-5"></div>
+    <div class="absolute inset-0 dark:bg-black/5"></div>
   </div>
 </template>

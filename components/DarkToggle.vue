@@ -2,9 +2,9 @@
 const color = useColorMode()
 
 function toggleDark(event: MouseEvent) {
-  const isAppearanceTransition =
-    document.startViewTransition &&
-    !window.matchMedia('(prefers-reduced-motion: reduce)').matches
+  const isAppearanceTransition = !window.matchMedia(
+    '(prefers-reduced-motion: reduce)',
+  ).matches
 
   if (!isAppearanceTransition) {
     color.preference = color.value === 'dark' ? 'light' : 'dark'
@@ -17,7 +17,7 @@ function toggleDark(event: MouseEvent) {
     Math.max(x, innerWidth - x),
     Math.max(y, innerHeight - y),
   )
-  // @ts-expect-error: Transition API
+
   const transition = document.startViewTransition(async () => {
     color.preference = color.value === 'dark' ? 'light' : 'dark'
     await nextTick()
