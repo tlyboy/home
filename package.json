@@ -25,6 +25,9 @@
     "sass": "^1.85.0"
   },
   "packageManager": "pnpm@10.4.0",
+  "engines": {
+    "node": "22.x"
+  },
   "pnpm": {
     "onlyBuiltDependencies": [
       "@parcel/watcher",
