@@ -21,5 +21,6 @@ export default defineNuxtConfig({
   },
   elementPlus: {
     importStyle: 'scss',
+    defaultLocale: 'zh-CN',
   },
 })
