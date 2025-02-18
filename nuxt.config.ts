@@ -2,9 +2,20 @@ import tailwindcss from '@tailwindcss/vite'
 // https://nuxt.com/docs/api/configuration/nuxt-config
 
 export default defineNuxtConfig({
+  future: {
+    compatibilityVersion: 4,
+  },
   compatibilityDate: '2024-11-01',
   devtools: { enabled: true },
-  css: ['~/assets/styles/main.css', '~/assets/styles/index.scss'],
+  app: {
+    head: {
+      htmlAttrs: {
+        lang: 'zh-CN',
+      },
+      title: 'Guany 的首页',
+    },
+  },
+  css: ['~/assets/styles/main.css'],
   modules: ['@nuxtjs/color-mode', '@element-plus/nuxt'],
   colorMode: {
     classSuffix: '',
@@ -14,7 +25,8 @@ export default defineNuxtConfig({
     css: {
       preprocessorOptions: {
         scss: {
-          additionalData: `@use "~/assets/styles/element/index.scss" as *;`,
+          api: 'modern-compiler',
+          additionalData: `@use "~/assets/styles/element/index.scss" as element;`,
         },
       },
     },
@@ -22,5 +34,6 @@ export default defineNuxtConfig({
   elementPlus: {
     importStyle: 'scss',
     defaultLocale: 'zh-CN',
+    themes: ['dark'],
   },
 })
