@@ -13,7 +13,8 @@
     "@tailwindcss/vite": "^4.0.7",
     "nuxt": "^3.15.4",
     "tailwindcss": "^4.0.7",
-    "vue": "latest"
+    "vue": "latest",
+    "vue-router": "latest"
   },
   "devDependencies": {
     "@egoist/tailwindcss-icons": "^1.9.0",
