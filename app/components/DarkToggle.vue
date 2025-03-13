@@ -6,7 +6,10 @@ function toggleDark(event: MouseEvent) {
     '(prefers-reduced-motion: reduce)',
   ).matches
 
-  if (!isAppearanceTransition) {
+  if (
+    !isAppearanceTransition ||
+    typeof document.startViewTransition !== 'function'
+  ) {
     color.preference = color.value === 'dark' ? 'light' : 'dark'
     return
   }
