@@ -10,22 +10,22 @@
     "preview": "nuxt preview"
   },
   "dependencies": {
-    "@tailwindcss/vite": "^4.0.7",
-    "nuxt": "^3.15.4",
-    "tailwindcss": "^4.0.7",
+    "@tailwindcss/vite": "^4.0.13",
+    "nuxt": "^3.16.0",
+    "tailwindcss": "^4.0.13",
     "vue": "latest",
     "vue-router": "latest"
   },
   "devDependencies": {
     "@egoist/tailwindcss-icons": "^1.9.0",
     "@element-plus/nuxt": "^1.1.1",
-    "@iconify-json/carbon": "^1.2.7",
+    "@iconify-json/carbon": "^1.2.8",
     "@nuxtjs/color-mode": "^3.5.2",
-    "prettier": "^3.5.1",
+    "prettier": "^3.5.3",
     "prettier-plugin-tailwindcss": "^0.6.11",
-    "sass": "^1.85.0"
+    "sass": "^1.85.1"
   },
-  "packageManager": "pnpm@10.4.1",
+  "packageManager": "pnpm@10.6.2",
   "engines": {
     "node": "22.x"
   },

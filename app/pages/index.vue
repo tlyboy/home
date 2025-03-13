@@ -1,22 +1,10 @@
 <script setup lang="ts">
-import type { HPImageArchive } from '~/types/bing/hpImageArchive'
-import type { Repos } from '~/types/github/repo'
+import type { Repos } from '~~/types/github/repo'
+import background from '~/assets/images/background.avif'
 
 definePageMeta({
   layout: 'app-main',
 })
-
-const { data: hpImageArchive } = useFetch<HPImageArchive>(
-  'https://www.bing.com/HPImageArchive.aspx',
-  {
-    query: {
-      format: 'js',
-      idx: 0,
-      n: 1,
-      mkt: 'zh-CN',
-    },
-  },
-)
 
 const { data: repos } = useFetch<Repos>(
   'https://api.github.com/users/tlyboy/repos',
@@ -31,9 +19,7 @@ const { data: repos } = useFetch<Repos>(
 
 <template>
   <div>
-    <TheHero
-      :background-image="`url(https://www.bing.com${hpImageArchive?.images[0]?.url})`"
-    />
+    <TheHero :background-image="`url(${background})`" />
     <TheRepo :repos="repos!" />
     <TheFooter />
   </div>
