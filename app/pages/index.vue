@@ -1,9 +1,14 @@
 <script setup lang="ts">
 import type { Repos } from '~~/types/github/repo'
-import background from '~/assets/images/background.avif'
 
 definePageMeta({
   layout: 'app-main',
+})
+
+const background = useImage()
+
+const backgroundUrl = background('/img/background.jpg', {
+  format: 'avif',
 })
 
 const { data: repos } = useFetch<Repos>(
@@ -19,7 +24,7 @@ const { data: repos } = useFetch<Repos>(
 
 <template>
   <div>
-    <TheHero :background-image="`url(${background})`" />
+    <TheHero :background-image="`url(${backgroundUrl})`" />
     <TheRepo :repos="repos!" />
     <TheFooter />
   </div>

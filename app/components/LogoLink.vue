@@ -4,7 +4,7 @@ import { appName } from '~/constants'
 
 <template>
   <RouterLink to="/" class="flex h-full items-center gap-4">
-    <img class="h-8" src="~/assets/images/logo.png" alt="logo" />
+    <NuxtImg class="h-8" src="/img/logo.png" format="avif" alt="logo" />
     <span class="font-bold">{{ appName }}</span>
   </RouterLink>
 </template>

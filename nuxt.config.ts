@@ -16,7 +16,7 @@ export default defineNuxtConfig({
     },
   },
   css: ['~/assets/styles/main.css'],
-  modules: ['@nuxtjs/color-mode', '@element-plus/nuxt'],
+  modules: ['@nuxtjs/color-mode', '@element-plus/nuxt', '@nuxt/image'],
   colorMode: {
     classSuffix: '',
   },
