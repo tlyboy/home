@@ -12,9 +12,15 @@ body,
   height: 100%;
 }
 
+html {
+  background: #ecf0f1;
+  color: #121212;
+}
+
 html.dark {
-  background: #121212;
   color-scheme: dark;
+  background: #121212;
+  color: #ecf0f1;
 }
 
 ::view-transition-old(root),
