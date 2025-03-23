@@ -4,11 +4,13 @@ const { data: repoRes } = useFetch('/api/repo')
 const { data: backgroundRes } = useFetch('/api/background')
 
 useHead({
-  title: `${userRes.value?.name} 的首页`,
+  title: computed(() =>
+    userRes.value?.name ? `${userRes.value?.name} 的首页` : '加载中...',
+  ),
   link: [
     {
       rel: 'icon',
-      href: `${userRes.value?.avatar_url}`,
+      href: computed(() => userRes.value?.avatar_url || ''),
     },
   ],
 })
