@@ -4,3 +4,5 @@ services:
     restart: unless-stopped
     ports:
       - 3000:3000
+    environment:
+      - NUXT_GITHUB_USER_NAME=${NUXT_GITHUB_USER_NAME}
