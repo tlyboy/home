@@ -1,6 +1,6 @@
 <script setup lang="ts">
 const { data: userRes } = useFetch('/api/user')
-const { data: repoRes } = useFetch('/api/repo')
+const { data: repoRes } = useFetch('/api/user/repos')
 const { data: backgroundRes } = useFetch('/api/background')
 
 useHead({

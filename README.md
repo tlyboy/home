@@ -41,9 +41,9 @@ pnpm install
 
 创建 `.env` 文件并配置以下环境变量：
 
-| 环境变量                | 值                 | 说明             | 必须 |
-| ----------------------- | ------------------ | ---------------- | ---- |
-| `NUXT_GITHUB_USER_NAME` | 你的 GitHub 用户名 | 用于获取个人信息 | ✅   |
+| 环境变量            | 值              | 说明          | 必须 |
+| ------------------- | --------------- | ------------- | ---- |
+| `NUXT_GITHUB_TOKEN` | GitHub 访问令牌 | 用于 API 访问 | ✅   |
 
 3. 启动开发服务器
 
@@ -61,9 +61,9 @@ pnpm dev
 2. 登录或注册 Netlify 账号
 3. 环境变量配置：
 
-| 环境变量                | 值                 | 说明             | 必须 |
-| ----------------------- | ------------------ | ---------------- | ---- |
-| `NUXT_GITHUB_USER_NAME` | 你的 GitHub 用户名 | 用于获取个人信息 | ✅   |
+| 环境变量            | 值              | 说明          | 必须 |
+| ------------------- | --------------- | ------------- | ---- |
+| `NUXT_GITHUB_TOKEN` | GitHub 访问令牌 | 用于 API 访问 | ✅   |
 
 > 📝 **部署说明**
 >
@@ -81,10 +81,10 @@ pnpm dev
 2. 登录或注册 Vercel 账号
 3. 必要环境变量配置：
 
-| 环境变量                       | 值                 | 说明             | 必须 |
-| ------------------------------ | ------------------ | ---------------- | ---- |
-| `NUXT_GITHUB_USER_NAME`        | 你的 GitHub 用户名 | 用于获取个人信息 | ✅   |
-| `ENABLE_EXPERIMENTAL_COREPACK` | `1`                | 启用 pnpm 支持   | ✅   |
+| 环境变量                       | 值              | 说明           | 必须 |
+| ------------------------------ | --------------- | -------------- | ---- |
+| `NUXT_GITHUB_TOKEN`            | GitHub 访问令牌 | 用于 API 访问  | ✅   |
+| `ENABLE_EXPERIMENTAL_COREPACK` | `1`             | 启用 pnpm 支持 | ✅   |
 
 > ⚠️ **重要提示**
 >
@@ -101,7 +101,7 @@ git clone https://github.com/tlyboy/home.git
 cd home
 
 # 创建 .env 文件（可选）
-echo "NUXT_GITHUB_USER_NAME=your_username" > .env
+echo "NUXT_GITHUB_TOKEN=your_token" > .env
 
 # 启动服务
 docker compose up -d
@@ -125,7 +125,7 @@ docker run -d -p 3000:3000 --env-file .env --name home home
 >
 >    ```bash
 >    # 创建 .env 文件
->    echo "NUXT_GITHUB_USER_NAME=your_username" > .env
+>    echo "NUXT_GITHUB_TOKEN=your_token" > .env
 >
 >    # Docker Compose 会自动读取 .env 文件
 >    docker compose up -d
@@ -138,10 +138,10 @@ docker run -d -p 3000:3000 --env-file .env --name home home
 >
 >    ```bash
 >    # Docker Compose
->    NUXT_GITHUB_USER_NAME=your_username docker compose up -d
+>    NUXT_GITHUB_TOKEN=your_token docker compose up -d
 >
 >    # Docker 命令
->    docker run -d -p 3000:3000 -e NUXT_GITHUB_USER_NAME=your_username --name home home
+>    docker run -d -p 3000:3000 -e NUXT_GITHUB_TOKEN=your_token --name home home
 >    ```
 
 访问 `http://localhost:3000` 即可查看网站。

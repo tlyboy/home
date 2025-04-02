@@ -10,7 +10,7 @@ export default defineNuxtConfig({
   },
 
   runtimeConfig: {
-    githubUserName: '',
+    githubToken: '',
   },
 
   css: ['~/assets/styles/main.css'],
