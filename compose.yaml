@@ -5,4 +5,4 @@ services:
     ports:
       - 3000:3000
     environment:
-      - NUXT_GITHUB_USER_NAME=${NUXT_GITHUB_USER_NAME}
+      - NUXT_GITHUB_TOKEN=${NUXT_GITHUB_TOKEN}
