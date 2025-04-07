@@ -22,10 +22,10 @@
 
 ### 环境准备
 
-| 依赖项  | 版本要求 | 说明                                   |
-| ------- | -------- | -------------------------------------- |
-| Node.js | 22.x     | 推荐使用 fnm 或其他 Node.js 版本管理器 |
-| pnpm    | 10.x     | 高性能的包管理工具                     |
+| 依赖项   | 要求   | 说明                                            |
+| -------- | ------ | ----------------------------------------------- |
+| Node.js  | 22.x   | 推荐使用 fnm 或其他 Node.js 版本管理器          |
+| corepack | enable | 启用 corepack 功能，使用 `corepack enable` 命令 |
 
 ### 本地开发
 
@@ -34,7 +34,6 @@
 ```sh
 git clone https://github.com/tlyboy/home.git
 cd home
-corepack enable
 pnpm install
 ```
 
