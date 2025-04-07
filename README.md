@@ -42,9 +42,9 @@ pnpm install
 
 创建 `.env` 文件并配置以下环境变量：
 
-| 环境变量            | 值              | 说明          |
-| ------------------- | --------------- | ------------- |
-| `NUXT_GITHUB_TOKEN` | GitHub 访问令牌 | 用于 API 访问 |
+```sh
+NUXT_GITHUB_TOKEN=your_token
+```
 
 3. 启动开发服务器
 
@@ -91,9 +91,9 @@ cd home
 
 创建 `.env` 文件并配置以下环境变量：
 
-| 环境变量            | 值              | 说明          |
-| ------------------- | --------------- | ------------- |
-| `NUXT_GITHUB_TOKEN` | GitHub 访问令牌 | 用于 API 访问 |
+```sh
+NUXT_GITHUB_TOKEN=your_token
+```
 
 3. 启动服务
 
