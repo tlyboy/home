@@ -45,7 +45,7 @@ useHead({
           backgroundImage: `url(${backgroundRes})`,
         }"
       ></div>
-      <div class="absolute inset-0 dark:bg-black/5"></div>
+      <div class="absolute inset-0 bg-white/5 dark:bg-black/5"></div>
     </div>
 
     <div class="flex flex-col items-center justify-center px-4">
