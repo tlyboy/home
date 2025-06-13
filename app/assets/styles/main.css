@@ -13,14 +13,12 @@ body,
 }
 
 html {
-  background: #ecf0f1;
-  color: #121212;
+  background: #f3f3f3;
 }
 
 html.dark {
+  background: #111111;
   color-scheme: dark;
-  background: #121212;
-  color: #ecf0f1;
 }
 
 ::view-transition-old(root),

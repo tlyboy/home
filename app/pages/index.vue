@@ -17,7 +17,7 @@ useHead({
 </script>
 
 <template>
-  <header class="h-[60px] bg-white px-[20px] dark:bg-black">
+  <header class="h-[60px] bg-[#f3f3f3] px-[20px] dark:bg-[#111111]">
     <section class="mx-auto flex h-full max-w-7xl items-center justify-between">
       <RouterLink to="/" class="flex h-full items-center gap-4">
         <img class="h-8 rounded-full" :src="userRes?.avatar_url" alt="logo" />
@@ -45,7 +45,7 @@ useHead({
           backgroundImage: `url(${backgroundRes})`,
         }"
       ></div>
-      <div class="absolute inset-0 bg-white/5 dark:bg-black/5"></div>
+      <div class="absolute inset-0 bg-[#f3f3f3]/5 dark:bg-[#121212]/5"></div>
     </div>
 
     <div class="flex flex-col items-center justify-center px-4">
@@ -54,7 +54,7 @@ useHead({
         <div
           v-for="repo in repoRes"
           :key="repo.id"
-          class="flex w-[300px] cursor-default flex-col gap-2 rounded-lg bg-white p-4 transition duration-300 hover:shadow-2xl hover:shadow-[#3498db] dark:bg-black"
+          class="flex w-[300px] cursor-default flex-col gap-2 rounded-lg bg-white p-4 transition duration-300 hover:shadow-2xl hover:shadow-[#3498db] dark:bg-[#2C2C2C]"
         >
           <h3 class="truncate font-bold">{{ repo.name }}</h3>
           <p class="truncate">{{ repo.description }}</p>
