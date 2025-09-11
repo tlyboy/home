@@ -17,7 +17,7 @@ useHead({
 </script>
 
 <template>
-  <header class="h-[60px] bg-[#f3f3f3] px-[20px] dark:bg-[#111111]">
+  <header class="h-[60px] px-[20px]">
     <section class="mx-auto flex h-full max-w-7xl items-center justify-between">
       <RouterLink to="/" class="flex h-full items-center gap-4">
         <img class="h-8 rounded-full" :src="userRes?.avatar_url" alt="logo" />

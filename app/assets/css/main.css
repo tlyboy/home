@@ -13,11 +13,11 @@ body,
 }
 
 html {
-  background: #f3f3f3;
+  background: #ededed;
 }
 
 html.dark {
-  background: #111111;
+  background: #191919;
   color-scheme: dark;
 }
 
