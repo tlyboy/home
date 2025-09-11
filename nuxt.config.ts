@@ -2,7 +2,7 @@ import tailwindcss from '@tailwindcss/vite'
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  compatibilityDate: '2025-07-16',
+  compatibilityDate: '2025-09-11',
   devtools: { enabled: true },
   css: ['~/assets/css/main.css'],
   vite: {
