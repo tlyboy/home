@@ -37,6 +37,7 @@ function toggleDark(event: MouseEvent) {
       {
         duration: 400,
         easing: 'ease-out',
+        fill: 'forwards',
         pseudoElement:
           color.value === 'dark'
             ? '::view-transition-old(root)'
