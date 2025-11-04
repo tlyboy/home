@@ -14,5 +14,11 @@ export default defineNuxtConfig({
   },
   runtimeConfig: {
     githubToken: '',
+    public: {
+      icpNumber: '',
+      icpLink: '',
+      policeNumber: '',
+      policeLink: '',
+    },
   },
 })

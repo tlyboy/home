@@ -3,6 +3,8 @@ const { data: userRes } = useFetch('/api/user')
 const { data: repoRes } = useFetch('/api/user/repos')
 const { data: backgroundRes } = useFetch('/api/background')
 
+const config = useRuntimeConfig()
+
 useHead({
   title: computed(() =>
     userRes.value?.name ? `${userRes.value?.name} 的首页` : '加载中...',
@@ -79,9 +81,39 @@ useHead({
   </main>
 
   <footer class="flex flex-col items-center gap-2 p-10">
-    <p>基于 MIT 许可发布</p>
-    <p>
-      版权所有 © {{ new Date().getFullYear() }}-present {{ userRes?.name }}
-    </p>
+    <template
+      v-if="config.public.icpNumber || config.public.policeNumber"
+    >
+      <a
+        v-if="config.public.icpNumber && config.public.icpLink"
+        class="opacity-75 transition duration-200 ease-in-out hover:text-[#3498db] hover:opacity-100"
+        :href="config.public.icpLink || ''"
+        target="_blank"
+        rel="noopener noreferrer"
+        >{{ config.public.icpNumber }}</a
+      >
+
+      <a
+        v-if="config.public.policeNumber && config.public.policeLink"
+        class="flex items-center gap-2 opacity-75 transition duration-200 ease-in-out hover:text-[#3498db] hover:opacity-100"
+        :href="config.public.policeLink || ''"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img
+          src="/img/beian.png"
+          :alt="config.public.policeNumber || ''"
+          class="w-4"
+        />
+        <span>{{ config.public.policeNumber }}</span>
+      </a>
+    </template>
+
+    <template v-else>
+      <p>基于 MIT 许可发布</p>
+      <p>
+        版权所有 © {{ new Date().getFullYear() }}-present {{ userRes?.name }}
+      </p>
+    </template>
   </footer>
 </template>
