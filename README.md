@@ -24,7 +24,7 @@
 
 | 依赖项   | 要求   | 说明                                            |
 | -------- | ------ | ----------------------------------------------- |
-| Node.js  | 22.x   | 推荐使用 fnm 或其他 Node.js 版本管理器          |
+| Node.js  | 24.x   | 推荐使用 fnm 或其他 Node.js 版本管理器          |
 | corepack | enable | 启用 corepack 功能，使用 `corepack enable` 命令 |
 
 ### 本地开发
@@ -70,13 +70,13 @@ pnpm run dev
 2. 登录或注册 Netlify 账号
 3. 环境变量配置：
 
-| 环境变量                      | 值              | 必需 | 说明                 |
-| ----------------------------- | --------------- | ---- | -------------------- |
-| `NUXT_GITHUB_TOKEN`           | GitHub 访问令牌 | ✅   | 用于 API 访问        |
-| `NUXT_PUBLIC_ICP_NUMBER`      | ICP 备案号      | ⬜   | ICP 备案信息         |
-| `NUXT_PUBLIC_ICP_LINK`        | ICP 备案链接    | ⬜   | ICP 备案跳转地址     |
-| `NUXT_PUBLIC_POLICE_NUMBER`   | 公安备案号      | ⬜   | 公安备案信息         |
-| `NUXT_PUBLIC_POLICE_LINK`     | 公安备案链接    | ⬜   | 公安备案跳转地址     |
+| 环境变量                    | 值              | 必需 | 说明             |
+| --------------------------- | --------------- | ---- | ---------------- |
+| `NUXT_GITHUB_TOKEN`         | GitHub 访问令牌 | ✅   | 用于 API 访问    |
+| `NUXT_PUBLIC_ICP_NUMBER`    | ICP 备案号      | ⬜   | ICP 备案信息     |
+| `NUXT_PUBLIC_ICP_LINK`      | ICP 备案链接    | ⬜   | ICP 备案跳转地址 |
+| `NUXT_PUBLIC_POLICE_NUMBER` | 公安备案号      | ⬜   | 公安备案信息     |
+| `NUXT_PUBLIC_POLICE_LINK`   | 公安备案链接    | ⬜   | 公安备案跳转地址 |
 
 ### Vercel 部署
 
@@ -84,14 +84,14 @@ pnpm run dev
 2. 登录或注册 Vercel 账号
 3. 环境变量配置：
 
-| 环境变量                       | 值              | 必需 | 说明                 |
-| ------------------------------ | --------------- | ---- | -------------------- |
-| `ENABLE_EXPERIMENTAL_COREPACK` | `1`             | ✅   | 启用 corepack        |
-| `NUXT_GITHUB_TOKEN`            | GitHub 访问令牌 | ✅   | 用于 API 访问        |
-| `NUXT_PUBLIC_ICP_NUMBER`       | ICP 备案号      | ⬜   | ICP 备案信息         |
-| `NUXT_PUBLIC_ICP_LINK`         | ICP 备案链接    | ⬜   | ICP 备案跳转地址     |
-| `NUXT_PUBLIC_POLICE_NUMBER`    | 公安备案号      | ⬜   | 公安备案信息         |
-| `NUXT_PUBLIC_POLICE_LINK`      | 公安备案链接    | ⬜   | 公安备案跳转地址     |
+| 环境变量                       | 值              | 必需 | 说明             |
+| ------------------------------ | --------------- | ---- | ---------------- |
+| `ENABLE_EXPERIMENTAL_COREPACK` | `1`             | ✅   | 启用 corepack    |
+| `NUXT_GITHUB_TOKEN`            | GitHub 访问令牌 | ✅   | 用于 API 访问    |
+| `NUXT_PUBLIC_ICP_NUMBER`       | ICP 备案号      | ⬜   | ICP 备案信息     |
+| `NUXT_PUBLIC_ICP_LINK`         | ICP 备案链接    | ⬜   | ICP 备案跳转地址 |
+| `NUXT_PUBLIC_POLICE_NUMBER`    | 公安备案号      | ⬜   | 公安备案信息     |
+| `NUXT_PUBLIC_POLICE_LINK`      | 公安备案链接    | ⬜   | 公安备案跳转地址 |
 
 ### Docker 部署
 
