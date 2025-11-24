@@ -19,7 +19,7 @@ useHead({
 </script>
 
 <template>
-  <header class="h-[60px] px-[20px]">
+  <header class="h-[60px] px-5">
     <section class="mx-auto flex h-full max-w-7xl items-center justify-between">
       <RouterLink to="/" class="flex h-full items-center gap-4">
         <img class="h-8 rounded-full" :src="userRes?.avatar_url" alt="logo" />
@@ -81,9 +81,7 @@ useHead({
   </main>
 
   <footer class="flex flex-col items-center gap-2 p-10">
-    <template
-      v-if="config.public.icpNumber || config.public.policeNumber"
-    >
+    <template v-if="config.public.icpNumber || config.public.policeNumber">
       <a
         v-if="config.public.icpNumber && config.public.icpLink"
         class="opacity-75 transition duration-200 ease-in-out hover:text-[#3498db] hover:opacity-100"

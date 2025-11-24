@@ -13,7 +13,7 @@ export default defineEventHandler(async () => {
     },
   )
 
-  const backgroundUrl = `https://www.bing.com/${res.images[0].url}`
+  const backgroundUrl = `https://www.bing.com${res.images[0].url}`
 
   return backgroundUrl
 })
