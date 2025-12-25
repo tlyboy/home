@@ -43,13 +43,13 @@ pnpm install
 
 ```sh
 # GitHub Token（必需）
-NUXT_GITHUB_TOKEN=your_github_token
+NUXT_GITHUB_TOKEN="your_github_token"
 
 # 备案信息配置（可选）
-NUXT_PUBLIC_ICP_NUMBER=your_icp_number
-NUXT_PUBLIC_ICP_LINK=https://beian.miit.gov.cn/
-NUXT_PUBLIC_POLICE_NUMBER=your_police_number
-NUXT_PUBLIC_POLICE_LINK=your_police_link
+NUXT_PUBLIC_ICP_NUMBER="your_icp_number"
+NUXT_PUBLIC_ICP_LINK="https://beian.miit.gov.cn/"
+NUXT_PUBLIC_POLICE_NUMBER="your_police_number"
+NUXT_PUBLIC_POLICE_LINK="your_police_link"
 ```
 
 > **注意**：备案信息为可选配置。如果配置了备案信息，页面底部将显示备案链接；如果未配置，则显示 MIT 许可和版权信息。
@@ -109,13 +109,13 @@ cd home
 
 ```sh
 # GitHub Token（必需）
-NUXT_GITHUB_TOKEN=your_github_token
+NUXT_GITHUB_TOKEN="your_github_token"
 
 # 备案信息配置（可选）
-NUXT_PUBLIC_ICP_NUMBER=your_icp_number
-NUXT_PUBLIC_ICP_LINK=https://beian.miit.gov.cn/
-NUXT_PUBLIC_POLICE_NUMBER=your_police_number
-NUXT_PUBLIC_POLICE_LINK=your_police_link
+NUXT_PUBLIC_ICP_NUMBER="your_icp_number"
+NUXT_PUBLIC_ICP_LINK="https://beian.miit.gov.cn/"
+NUXT_PUBLIC_POLICE_NUMBER="your_police_number"
+NUXT_PUBLIC_POLICE_LINK="your_police_link"
 ```
 
 3. 启动服务
