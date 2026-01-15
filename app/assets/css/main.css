@@ -45,7 +45,7 @@ html.dark {
 
 @layer components {
   .btn {
-    @apply inline-block cursor-pointer rounded bg-[#3498db] px-4 py-1 text-white !outline-none hover:bg-[#2980b9] disabled:cursor-default disabled:bg-gray-600 disabled:opacity-50;
+    @apply inline-block cursor-pointer rounded bg-[#3498db] px-4 py-1 text-white outline-none! hover:bg-[#2980b9] disabled:cursor-default disabled:bg-gray-600 disabled:opacity-50;
   }
 
   .icon-btn {
