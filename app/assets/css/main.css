@@ -6,6 +6,68 @@
   scale: 1.2;
 }
 
+/* ========================================
+   Design System - CSS Variables
+   ======================================== */
+
+:root {
+  /* Colors - Light Mode */
+  --color-primary: #2563eb;
+  --color-primary-hover: #1d4ed8;
+  --color-bg: #fafafa;
+  --color-bg-card: #ffffff;
+  --color-bg-card-hover: #f8fafc;
+  --color-text: #18181b;
+  --color-text-secondary: #71717a;
+  --color-border: #e4e4e7;
+  --color-border-hover: #d4d4d8;
+
+  /* Typography - System Fonts */
+  --font-heading: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-body: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+
+  /* Border Radius */
+  --radius-sm: 0.375rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+  --radius-xl: 1rem;
+  --radius-2xl: 1.5rem;
+
+  /* Transitions */
+  --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-normal: 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.dark {
+  /* Colors - Dark Mode */
+  --color-primary: #3b82f6;
+  --color-primary-hover: #60a5fa;
+  --color-bg: #09090b;
+  --color-bg-card: #18181b;
+  --color-bg-card-hover: #1f1f23;
+  --color-text: #fafafa;
+  --color-text-secondary: #a1a1aa;
+  --color-border: #27272a;
+  --color-border-hover: #3f3f46;
+
+  /* Shadows - Dark Mode */
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.3);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.4), 0 2px 4px -2px rgb(0 0 0 / 0.3);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.4), 0 4px 6px -4px rgb(0 0 0 / 0.3);
+  --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.5), 0 8px 10px -6px rgb(0 0 0 / 0.4);
+}
+
+/* ========================================
+   Base Styles
+   ======================================== */
+
 html,
 body,
 #__nuxt {
@@ -13,13 +75,19 @@ body,
 }
 
 html {
-  background: #ededed;
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-body);
+  scroll-behavior: smooth;
 }
 
 html.dark {
-  background: #191919;
   color-scheme: dark;
 }
+
+/* ========================================
+   View Transitions (Theme Toggle Animation)
+   ======================================== */
 
 ::view-transition-old(root),
 ::view-transition-new(root) {
@@ -43,12 +111,263 @@ html.dark {
   z-index: 1;
 }
 
-@layer components {
-  .btn {
-    @apply inline-block cursor-pointer rounded bg-[#3498db] px-4 py-1 text-white outline-none! hover:bg-[#2980b9] disabled:cursor-default disabled:bg-gray-600 disabled:opacity-50;
+/* ========================================
+   Animations
+   ======================================== */
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-in-down {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scale-in {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Hero Content Animation */
+.hero-content {
+  animation: fade-in-up 600ms ease-out forwards;
+}
+
+/* Project Card Animation */
+.project-card {
+  animation: fade-in-up 500ms ease-out forwards;
+}
+
+.project-card:nth-child(1) { animation-delay: 100ms; }
+.project-card:nth-child(2) { animation-delay: 150ms; }
+.project-card:nth-child(3) { animation-delay: 200ms; }
+.project-card:nth-child(4) { animation-delay: 250ms; }
+.project-card:nth-child(5) { animation-delay: 300ms; }
+.project-card:nth-child(6) { animation-delay: 350ms; }
+
+/* Section Heading Animation */
+.section-heading {
+  animation: fade-in-up 500ms ease-out forwards;
+}
+
+/* ========================================
+   Respect User Motion Preferences
+   ======================================== */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
   }
 
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* ========================================
+   Component Classes
+   ======================================== */
+
+@layer components {
+  /* Legacy button (kept for compatibility) */
+  .btn {
+    @apply inline-block cursor-pointer rounded bg-(--color-primary) px-4 py-1 text-white outline-none! hover:bg-(--color-primary-hover) disabled:cursor-default disabled:bg-gray-600 disabled:opacity-50;
+  }
+
+  /* Primary Button */
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg px-6 py-3 font-medium transition-all;
+    background: var(--color-primary);
+    color: white;
+    font-family: var(--font-heading);
+    box-shadow: var(--shadow-md);
+  }
+
+  .btn-primary:hover {
+    background: var(--color-primary-hover);
+    box-shadow: var(--shadow-lg);
+    transform: translateY(-2px);
+  }
+
+  .btn-primary:active {
+    transform: translateY(0);
+  }
+
+  /* Secondary Button */
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg px-6 py-3 font-medium transition-all;
+    background: var(--color-bg-card);
+    color: var(--color-text);
+    border: 1px solid var(--color-border);
+    font-family: var(--font-heading);
+    box-shadow: var(--shadow-sm);
+  }
+
+  .btn-secondary:hover {
+    background: var(--color-bg-card-hover);
+    border-color: var(--color-border-hover);
+    box-shadow: var(--shadow-md);
+    transform: translateY(-2px);
+  }
+
+  .btn-secondary:active {
+    transform: translateY(0);
+  }
+
+  /* Icon Button (legacy) */
   .icon-btn {
-    @apply inline-block cursor-pointer opacity-75 transition duration-200 ease-in-out select-none hover:text-[#3498db] hover:opacity-100;
+    @apply inline-block cursor-pointer transition duration-200 ease-in-out select-none;
+    color: var(--color-text-secondary);
+  }
+
+  .icon-btn:hover {
+    color: var(--color-primary);
+  }
+
+  /* Navigation Icon Button */
+  .nav-icon-btn {
+    @apply inline-flex items-center justify-center rounded-lg p-2 transition-all;
+    color: var(--color-text-secondary);
+    background: transparent;
+  }
+
+  .nav-icon-btn:hover {
+    color: var(--color-text);
+    background: var(--color-bg-card);
+    box-shadow: var(--shadow-sm);
+  }
+
+  /* Project Card */
+  .project-card {
+    @apply relative flex flex-col gap-3 rounded-xl p-5 transition-all;
+    background: var(--color-bg-card);
+    border: 1px solid var(--color-border);
+    box-shadow: var(--shadow-sm);
+  }
+
+  .project-card:hover {
+    border-color: var(--color-primary);
+    box-shadow: var(--shadow-lg);
+    transform: translateY(-4px);
+  }
+
+  .project-card:hover .project-card-title {
+    color: var(--color-primary);
+  }
+
+  .project-card-title {
+    @apply truncate font-semibold transition-colors;
+    font-family: var(--font-heading);
+    font-size: 1.125rem;
+    color: var(--color-text);
+  }
+
+  .project-card-description {
+    @apply line-clamp-2;
+    color: var(--color-text-secondary);
+    font-size: 0.875rem;
+    line-height: 1.5;
+  }
+
+  /* Language Tag */
+  .lang-tag {
+    @apply inline-flex items-center gap-1.5 rounded-full px-2.5 py-1 text-xs font-medium;
+    background: var(--color-primary);
+    color: white;
+    opacity: 0.9;
+  }
+
+  /* Stats Badge */
+  .stats-badge {
+    @apply inline-flex items-center gap-1 text-sm;
+    color: var(--color-text-secondary);
+  }
+
+  /* Glass Effect */
+  .glass {
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+  }
+
+  .dark .glass {
+    background: rgba(24, 24, 27, 0.8);
+  }
+
+  /* Header */
+  .header-glass {
+    background: rgba(250, 250, 250, 0.85);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid transparent;
+  }
+
+  .dark .header-glass {
+    background: rgba(9, 9, 11, 0.85);
+  }
+
+  .header-scrolled {
+    border-bottom-color: var(--color-border);
+    box-shadow: var(--shadow-md);
+  }
+
+  /* Section Heading */
+  .section-heading {
+    font-family: var(--font-heading);
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: var(--color-text);
+  }
+
+  /* Hero Overlay */
+  .hero-overlay {
+    background: linear-gradient(
+      to bottom,
+      rgba(250, 250, 250, 0) 0%,
+      rgba(250, 250, 250, 0.3) 50%,
+      rgba(250, 250, 250, 0.95) 100%
+    );
+  }
+
+  .dark .hero-overlay {
+    background: linear-gradient(
+      to bottom,
+      rgba(9, 9, 11, 0) 0%,
+      rgba(9, 9, 11, 0.3) 50%,
+      rgba(9, 9, 11, 0.95) 100%
+    );
   }
 }

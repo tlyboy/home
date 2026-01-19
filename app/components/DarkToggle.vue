@@ -50,8 +50,10 @@ function toggleDark(event: MouseEvent) {
 
 <template>
   <button
-    class="icon-btn i-carbon-sun dark:i-carbon-moon"
+    class="nav-icon-btn"
     title="切换深色模式"
     @click="toggleDark"
-  ></button>
+  >
+    <span class="i-carbon-sun dark:i-carbon-moon text-xl"></span>
+  </button>
 </template>
