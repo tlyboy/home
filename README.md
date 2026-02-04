@@ -100,7 +100,6 @@ pnpm run dev
 ```sh
 git clone https://github.com/tlyboy/home.git
 cd home
-
 ```
 
 2. 配置环境变量
