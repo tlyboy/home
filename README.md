@@ -2,7 +2,7 @@
 
 🖖 A personal homepage powered by Nuxt
 
-- 📦 Built with Nuxt 3 for a modern development experience
+- 📦 Built with Nuxt for a modern development experience
 - 🎨 Integrated with TailwindCSS for building beautiful interfaces
 - 🐙 Display GitHub profile and recent repositories
 - 🖼️ Bing daily wallpaper as background
