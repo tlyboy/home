@@ -41,20 +41,25 @@ useHead({
 </script>
 
 <template>
-  <div class="min-h-screen flex flex-col">
+  <div class="flex min-h-screen flex-col">
     <!-- Fixed Header with Glass Effect -->
     <header
-      class="header-glass fixed top-0 left-0 right-0 z-50 h-16 px-5 transition-all duration-300"
+      class="header-glass fixed top-0 right-0 left-0 z-50 h-16 px-5 transition-all duration-300"
       :class="{ 'header-scrolled': isScrolled }"
     >
-      <section class="mx-auto flex h-full max-w-6xl items-center justify-between">
-        <RouterLink to="/" class="flex items-center gap-3 group">
+      <section
+        class="mx-auto flex h-full max-w-6xl items-center justify-between"
+      >
+        <RouterLink to="/" class="group flex items-center gap-3">
           <img
             class="h-9 w-9 rounded-full ring-2 ring-(--color-border) transition-all group-hover:ring-(--color-primary)"
             :src="userRes?.avatar_url"
             alt="logo"
           />
-          <span class="font-semibold text-(--color-text)" style="font-family: var(--font-heading)">
+          <span
+            class="font-semibold text-(--color-text)"
+            style="font-family: var(--font-heading)"
+          >
             {{ userRes?.name }} 的首页
           </span>
         </RouterLink>
@@ -87,14 +92,16 @@ useHead({
         <div class="hero-overlay absolute inset-0"></div>
 
         <!-- Hero Content -->
-        <div class="relative z-10 flex min-h-[500px] items-center justify-center px-5 py-20">
+        <div
+          class="relative z-10 flex min-h-[500px] items-center justify-center px-5 py-20"
+        >
           <div class="hero-content flex flex-col items-center text-center">
             <!-- Avatar -->
             <div class="mb-6">
               <img
                 :src="userRes?.avatar_url"
                 :alt="userRes?.name || 'Avatar'"
-                class="h-32 w-32 rounded-full ring-4 ring-white/80 dark:ring-white/20 shadow-xl"
+                class="h-32 w-32 rounded-full shadow-xl ring-4 ring-white/80 dark:ring-white/20"
               />
             </div>
 
@@ -117,20 +124,28 @@ useHead({
 
             <!-- Stats -->
             <div class="mb-8 flex flex-wrap items-center justify-center gap-6">
-              <div v-if="userRes?.location" class="stats-badge text-zinc-700 dark:text-zinc-400">
+              <div
+                v-if="userRes?.location"
+                class="stats-badge text-zinc-700 dark:text-zinc-400"
+              >
                 <span class="i-carbon-location text-base"></span>
                 <span>{{ userRes?.location }}</span>
               </div>
-              <div v-if="userRes?.public_repos" class="stats-badge text-zinc-700 dark:text-zinc-400">
+              <div
+                v-if="userRes?.public_repos"
+                class="stats-badge text-zinc-700 dark:text-zinc-400"
+              >
                 <span class="i-carbon-repo-source-code text-base"></span>
                 <span>{{ userRes?.public_repos }} 仓库</span>
               </div>
-              <div v-if="userRes?.followers" class="stats-badge text-zinc-700 dark:text-zinc-400">
+              <div
+                v-if="userRes?.followers"
+                class="stats-badge text-zinc-700 dark:text-zinc-400"
+              >
                 <span class="i-carbon-user-multiple text-base"></span>
                 <span>{{ userRes?.followers }} 粉丝</span>
               </div>
             </div>
-
           </div>
         </div>
       </section>
@@ -138,9 +153,7 @@ useHead({
       <!-- Projects Section -->
       <section class="px-5 py-16">
         <div class="mx-auto max-w-6xl">
-          <h2 class="section-heading mb-10 text-center">
-            我的项目
-          </h2>
+          <h2 class="section-heading mb-10 text-center">我的项目</h2>
 
           <ClientOnly>
             <!-- Bento Grid -->
@@ -157,7 +170,7 @@ useHead({
                 <!-- Card Header -->
                 <div class="flex items-start justify-between gap-3">
                   <h3 class="project-card-title flex-1">{{ repo.name }}</h3>
-                  <div class="flex items-center gap-3 shrink-0">
+                  <div class="flex shrink-0 items-center gap-3">
                     <span v-if="repo.stargazers_count" class="stats-badge">
                       <span class="i-carbon-star text-sm"></span>
                       {{ repo.stargazers_count }}
@@ -201,9 +214,15 @@ useHead({
             <template #fallback>
               <div class="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
                 <div v-for="i in 6" :key="i" class="project-card animate-pulse">
-                  <div class="h-6 bg-gray-200 dark:bg-gray-700 rounded w-3/4 mb-3"></div>
-                  <div class="h-4 bg-gray-200 dark:bg-gray-700 rounded w-full mb-2"></div>
-                  <div class="h-4 bg-gray-200 dark:bg-gray-700 rounded w-2/3"></div>
+                  <div
+                    class="mb-3 h-6 w-3/4 rounded bg-gray-200 dark:bg-gray-700"
+                  ></div>
+                  <div
+                    class="mb-2 h-4 w-full rounded bg-gray-200 dark:bg-gray-700"
+                  ></div>
+                  <div
+                    class="h-4 w-2/3 rounded bg-gray-200 dark:bg-gray-700"
+                  ></div>
                 </div>
               </div>
             </template>
@@ -215,7 +234,9 @@ useHead({
     <!-- Footer -->
     <footer class="border-t border-(--color-border) px-5 py-8">
       <div class="mx-auto max-w-6xl">
-        <div class="flex flex-col items-center gap-4 text-center md:flex-row md:justify-between md:text-left">
+        <div
+          class="flex flex-col items-center gap-4 text-center md:flex-row md:justify-between md:text-left"
+        >
           <!-- Logo & Copyright -->
           <div class="flex items-center gap-3">
             <img
@@ -231,7 +252,9 @@ useHead({
 
           <!-- ICP / License -->
           <div class="flex flex-wrap items-center justify-center gap-4 text-sm">
-            <template v-if="config.public.icpNumber || config.public.policeNumber">
+            <template
+              v-if="config.public.icpNumber || config.public.policeNumber"
+            >
               <a
                 v-if="config.public.icpNumber && config.public.icpLink"
                 class="transition-colors hover:text-(--color-primary)"

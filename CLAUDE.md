@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## 项目概述
 
-这是 Guany 的个人主页，基于 Nuxt 4 构建。页面展示用户的 GitHub 信息和最近更新的仓库列表，背景使用必应每日壁纸。
+A personal homepage powered by Nuxt。页面展示用户的 GitHub 信息和最近更新的仓库列表，背景使用必应每日壁纸。
 
 ## 常用命令
 
@@ -35,6 +35,7 @@ docker compose up -d
 ## 代码架构
 
 ### 目录结构
+
 ```
 app/
 ├── assets/css/main.css   # TailwindCSS 入口，定义全局样式和组件类
@@ -57,9 +58,11 @@ types/                    # TypeScript 类型定义
 ## 环境变量
 
 必需：
+
 - `NUXT_GITHUB_TOKEN` - GitHub API Token
 
 可选（备案信息）：
+
 - `NUXT_PUBLIC_ICP_NUMBER` / `NUXT_PUBLIC_ICP_LINK`
 - `NUXT_PUBLIC_POLICE_NUMBER` / `NUXT_PUBLIC_POLICE_LINK`
 

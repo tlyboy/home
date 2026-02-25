@@ -1,6 +1,6 @@
 # home
 
-🖖 Guany's homepage
+🖖 A personal homepage powered by Nuxt
 
 - 📦 Built with Nuxt 3 for a modern development experience
 - 🎨 Integrated with TailwindCSS for building beautiful interfaces
@@ -18,10 +18,10 @@ git clone https://github.com/tlyboy/home.git
 
 ### Prerequisites
 
-| Dependency | Requirement | Description                                          |
-| ---------- | ----------- | ---------------------------------------------------- |
+| Dependency | Requirement | Description                                               |
+| ---------- | ----------- | --------------------------------------------------------- |
 | Node.js    | 24.x        | Recommended to use fnm or another Node.js version manager |
-| corepack   | enable      | Enable corepack with the `corepack enable` command   |
+| corepack   | enable      | Enable corepack with the `corepack enable` command        |
 
 ### Local Development
 
@@ -54,14 +54,14 @@ pnpm build
 2. Sign in or sign up for a Vercel account
 3. Configure environment variables:
 
-| Environment Variable           | Value              | Required | Description          |
-| ------------------------------ | ------------------ | -------- | -------------------- |
-| `ENABLE_EXPERIMENTAL_COREPACK` | `1`                | ✅       | Enable corepack      |
-| `NUXT_GITHUB_TOKEN`            | GitHub access token | ✅       | For API access       |
-| `NUXT_PUBLIC_ICP_NUMBER`       | ICP filing number  | ⬜       | ICP filing info      |
-| `NUXT_PUBLIC_ICP_LINK`         | ICP filing link    | ⬜       | ICP filing URL       |
-| `NUXT_PUBLIC_POLICE_NUMBER`    | Police filing number | ⬜     | Police filing info   |
-| `NUXT_PUBLIC_POLICE_LINK`      | Police filing link | ⬜       | Police filing URL    |
+| Environment Variable           | Value                | Required | Description        |
+| ------------------------------ | -------------------- | -------- | ------------------ |
+| `ENABLE_EXPERIMENTAL_COREPACK` | `1`                  | ✅       | Enable corepack    |
+| `NUXT_GITHUB_TOKEN`            | GitHub access token  | ✅       | For API access     |
+| `NUXT_PUBLIC_ICP_NUMBER`       | ICP filing number    | ⬜       | ICP filing info    |
+| `NUXT_PUBLIC_ICP_LINK`         | ICP filing link      | ⬜       | ICP filing URL     |
+| `NUXT_PUBLIC_POLICE_NUMBER`    | Police filing number | ⬜       | Police filing info |
+| `NUXT_PUBLIC_POLICE_LINK`      | Police filing link   | ⬜       | Police filing URL  |
 
 #### Netlify Deployment
 
@@ -69,13 +69,13 @@ pnpm build
 2. Sign in or sign up for a Netlify account
 3. Configure environment variables:
 
-| Environment Variable        | Value              | Required | Description          |
-| --------------------------- | ------------------ | -------- | -------------------- |
-| `NUXT_GITHUB_TOKEN`         | GitHub access token | ✅       | For API access       |
-| `NUXT_PUBLIC_ICP_NUMBER`    | ICP filing number  | ⬜       | ICP filing info      |
-| `NUXT_PUBLIC_ICP_LINK`      | ICP filing link    | ⬜       | ICP filing URL       |
-| `NUXT_PUBLIC_POLICE_NUMBER` | Police filing number | ⬜     | Police filing info   |
-| `NUXT_PUBLIC_POLICE_LINK`   | Police filing link | ⬜       | Police filing URL    |
+| Environment Variable        | Value                | Required | Description        |
+| --------------------------- | -------------------- | -------- | ------------------ |
+| `NUXT_GITHUB_TOKEN`         | GitHub access token  | ✅       | For API access     |
+| `NUXT_PUBLIC_ICP_NUMBER`    | ICP filing number    | ⬜       | ICP filing info    |
+| `NUXT_PUBLIC_ICP_LINK`      | ICP filing link      | ⬜       | ICP filing URL     |
+| `NUXT_PUBLIC_POLICE_NUMBER` | Police filing number | ⬜       | Police filing info |
+| `NUXT_PUBLIC_POLICE_LINK`   | Police filing link   | ⬜       | Police filing URL  |
 
 #### Docker Deployment
 
@@ -85,4 +85,4 @@ docker compose up -d
 
 ## License
 
-[MIT](https://opensource.org/licenses/MIT) © Guany
+[MIT](https://opensource.org/licenses/MIT)

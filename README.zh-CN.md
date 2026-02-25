@@ -1,6 +1,6 @@
 # home
 
-🖖 Guany 的首页
+🖖 基于 Nuxt 的个人主页
 
 - 📦 基于 Nuxt 3 构建，享受现代化开发体验
 - 🎨 集成 TailwindCSS，快速构建美观界面
@@ -85,4 +85,4 @@ docker compose up -d
 
 ## 使用许可
 
-[MIT](https://opensource.org/licenses/MIT) © Guany
+[MIT](https://opensource.org/licenses/MIT)
