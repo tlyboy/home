@@ -4,6 +4,8 @@
 
 - 📦 Built with Nuxt 3 for a modern development experience
 - 🎨 Integrated with TailwindCSS for building beautiful interfaces
+- 🐙 Display GitHub profile and recent repositories
+- 🖼️ Bing daily wallpaper as background
 - 🌓 Built-in dark / light theme switching
 - 📱 Responsive design for all devices
 - 🚀 One-click deployment to Vercel / Netlify / Docker
